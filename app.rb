@@ -15,3 +15,12 @@ end
 get "/contact" do
   erb :contact
 end
+
+post "/form-response" do
+  params.inspect
+
+  #send email here...use the email.rb
+
+  # this redirects to page user was on
+  redirect '/contact'
+end
