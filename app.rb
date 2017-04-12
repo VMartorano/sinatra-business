@@ -19,12 +19,10 @@ end
 post "/form-response" do
   params.inspect
 
-<<<<<<< HEAD
   #send email here...use the email.rb
 
   # this redirects to page user was on
   redirect '/contact'
-=======
   require 'sendgrid-ruby'
 
   # set the from, subject and to addresses
@@ -50,5 +48,4 @@ post "/form-response" do
 
   redirect "/contact"
   #you can use these params as input to an email form (subject, from to etc)
->>>>>>> dcbcbcbb0759e5637c44d4689c0780661aa29574
 end
