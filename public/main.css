@@ -1,0 +1,51 @@
+/*----Modal----*/
+#modal {
+  padding: 150px;
+  background-color: #333;
+  max-width: 30%;
+  height: 10px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 7px solid #bfbfbf;
+}
+
+.hidden {
+  display: none;
+}
+
+.exit-button {
+ display: block;
+ font-size: 5px;
+}
+
+#modal h2{
+  padding-top: 10%;
+}
+
+#submit {
+  padding-top: 10%;
+}
+
+#modal .exit-button {
+ position: absolute;
+ z-index: 1;
+ top: 10px;
+ right: 20px;
+ border: 0;
+ background: white;
+ color: #333;
+ padding: 5px 10px;
+ font-size: 8px;
+}
+
+.modal2{
+ display:block;
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ overflow: auto;
+}
