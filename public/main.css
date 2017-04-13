@@ -3,7 +3,6 @@
 background: url(http://www.travelviaitaly.com/wp-content/uploads/2015/12/Rome-Italy.jpg) no-repeat center center;
   background-size: cover;
   height: 70%;
-  position: relative;
   width: 100%;
   height: 800px;
   z-index: -1;
@@ -35,16 +34,16 @@ h1 {
   background-color: #18b9f8;
   color: white;
   border-radius: 12px;
-  box-shadow: white 2px 2px;
+  box-shadow: white 3px 3px;
   margin-bottom: 10px;
-  z-index: 2;
+  z-index: 5;
 }
 
 .home-button:hover {
-  background: #18b9f8;
-  transition: background .5s;
-  color: white;
-  box-shadow: 3px 3px white;
+  background-color: white;
+  transition: .5s;
+  color: #18b9f8;
+  box-shadow: 3px 3px #18b9f8;
 }
 
 h2 {
@@ -54,6 +53,7 @@ h2 {
   color: white;
   text-shadow: 2px 2px #18b9f8;
   padding-top: -2%;
+  margin-bottom: 50px;
 }
 
 /*---Nav Bar---*/
@@ -302,8 +302,32 @@ just for appearance; change whatever you want
   margin: 150px 0px 50px 50px;
 }
 
+#contact-info{
+  width: 80%;
+  margin-right: 10%;
+}
 .motz-contact, .joel-contact {
   font-family: "Avant-Garde", sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 4px;
+}
+
+.motz-contact img {
+  width: 100px;
+  border-radius: 20px;
+}
+
+.joel-contact img {
+  width: 100px;
+  border-radius: 20px;
+}
+
+.motz-contact {
+  float: left;
+}
+
+.joel-contact {
+  float: right;
+  clear:both;
+  margin-top: -180px;
 }
