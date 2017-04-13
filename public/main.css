@@ -51,54 +51,118 @@ h2 {
   padding-top: -2%;
 }
 
-/*----Modal----*/
-#modal {
-  padding: 150px;
-  background-color: #333;
-  max-width: 30%;
-  height: 10px;
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  border: 7px solid #bfbfbf;
+/*----gallery----*/
+
+/*
+essential styles:
+these make the slideshow work
+*/
+#slides{
+	position: relative;
+	height: 550px;
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
 }
 
-.hidden {
-  display: none;
+.slide{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	z-index: 1;
+
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
 }
 
-.exit-button {
- display: block;
- font-size: 5px;
+.showing{
+	opacity: 1;
+	z-index: 2;
 }
 
-#modal h2{
-  padding-top: 10%;
+
+.controls{
+	display: none;
 }
 
-#submit {
-  padding-top: 10%;
+
+/*
+non-essential styles:
+just for appearance; change whatever you want
+*/
+
+.slide{
+	font-size: 40px;
+	padding: 40px;
+	box-sizing: border-box;
+	background: #333;
+	color: #fff;
+  background-size: cover;
 }
 
-#modal .exit-button {
- position: absolute;
- z-index: 1;
- top: 10px;
- right: 20px;
- border: 0;
- background: white;
- color: #333;
- padding: 5px 10px;
- font-size: 8px;
+.slide:nth-of-type(1){
+  background-image: url('https://brightcove04pmdo-a.akamaihd.net/5104226627001/5104226627001_5232386545001_5215063851001-vs.jpg?pubId=5104226627001&videoId=5215063851001');
 }
 
-.modal2{
- display:block;
- position: absolute;
- top: 0;
- left: 0;
- width: 100%;
- height: 100%;
- overflow: auto;
+.slide:nth-of-type(2){
+  background-image: url('http://pearceonearth.com/wp-content/uploads/2013/07/italy_venice.jpg');
+}
+
+.slide:nth-of-type(3){
+  background-image: url('http://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/videos/florence_0.jpg?itok=7sWZ9tCK');
+}
+
+.slide:nth-of-type(4){
+  background-image: url('http://www.diarystore.com/sites/default/files/imagegallery_tour/leaning_tower_of_pisa_3.jpg');
+}
+
+.slide:nth-of-type(5){
+  background-image: url('http://pixel.nymag.com/imgs/fashion/daily/2014/09/23/23-italy-naples.w750.h560.2x.jpg');
+}
+
+.slide:nth-of-type(6){
+  background-image: url('http://www.tourist-destinations.net/wp-content/uploads/2015/02/pompeii.jpg');
+}
+
+.slide:nth-of-type(7){
+  background-image: url('https://static1.squarespace.com/static/570e2c6f3c44d8c61f70853f/5717d0a455598697b193886e/576feed120099e977d10d924/1466953426552/boat-tours-cinque-terre-home-11-banner.jpg?format=1500w');
+}
+
+.slide:nth-of-type(8){
+  background-image: url('http://media.architecturaldigest.com/photos/56cf89325f9912222d1286a1/2:1/w_2560/milan-package.jpg');
+}
+
+
+.controls{
+  background: white;
+  color: #18b9f8;
+  padding: 10px 0px;
+  font-size: 20px;
+  cursor: pointer;
+  border: 2px solid #18b9f8;
+  margin: 30px 0px 0px 10px;
+  width: 50px;
+}
+
+.controls:hover,
+.controls:focus{
+  background: #18b9f8;
+  color: white;
+}
+
+.gallery-container{
+  position: relative;
+}
+
+.buttons{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 10;
+  font-size: 0px;
 }
