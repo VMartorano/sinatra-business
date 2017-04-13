@@ -1,6 +1,6 @@
 /*----Home----*/
 .top {
-background: url(http://www.travelviaitaly.com/wp-content/uploads/2015/12/Rome-Italy.jpg) no-repeat center center;
+  background: url(http://www.travelviaitaly.com/wp-content/uploads/2015/12/Rome-Italy.jpg) no-repeat center center;
   background-size: cover;
   height: 70%;
   width: 100%;
@@ -298,8 +298,17 @@ just for appearance; change whatever you want
 }
 
 /*---Contact page---*/
+#contact-head {
+  margin-top: 50px;
+  font-size: 36px;
+  font family: "Forum";
+  color: #18b9f8;
+  text-align: center;
+  text-shadow: none;
+}
+
 #form-div {
-  margin: 150px 0px 50px 50px;
+  margin: 50px 0px 50px 50px;
 }
 
 #contact-info{
@@ -307,9 +316,10 @@ just for appearance; change whatever you want
   margin-right: 10%;
 }
 .motz-contact, .joel-contact {
-  font-family: "Avant-Garde", sans-serif;
-  font-size: 16px;
+  font-family: "Forum", sans-serif;
+  font-size: 14px;
   line-height: 4px;
+  font-weight: bolder
 }
 
 .motz-contact img {
@@ -323,11 +333,17 @@ just for appearance; change whatever you want
 }
 
 .motz-contact {
-  float: left;
+  text-align: left;
+  width: 45%;
+  margin-right: -50px;
 }
 
 .joel-contact {
   float: right;
   clear:both;
-  margin-top: -180px;
+  margin-top: -232px;
+}
+
+.icons {
+  color: black;
 }

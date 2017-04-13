@@ -46,6 +46,6 @@ post "/form-response" do
   puts response.body
 
 
-  redirect "/form-response"
+  redirect "/contact"
   #you can use these params as input to an email form (subject, from to etc)
 end
