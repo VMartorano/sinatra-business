@@ -1,9 +1,8 @@
 /*----Home----*/
 .top {
-background: url(http://www.pacificworld.com/webwp/wp-content/uploads/2016/03/italy.jpg) no-repeat center center;
+background: url(http://www.travelviaitaly.com/wp-content/uploads/2015/12/Rome-Italy.jpg) no-repeat center center;
   background-size: cover;
   height: 70%;
-  margin-top: -1%;
   padding-bottom: 11.5%;
 }
 
@@ -38,7 +37,7 @@ background: url(http://www.pacificworld.com/webwp/wp-content/uploads/2016/03/ita
 
 .home-button:hover {
   background: #18b9f8;
-  transition: background.5s;
+  transition: background .5s;
   color: white;
   box-shadow: 3px 3px white;
 }
@@ -50,7 +49,6 @@ h2 {
   color: white;
   text-shadow: 2px 2px #18b9f8;
   padding-top: -2%;
-}
 }
 
 /*----Modal----*/
