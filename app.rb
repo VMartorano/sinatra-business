@@ -48,3 +48,4 @@ post "/form-response" do
 
   redirect "/form-response"
   #you can use these params as input to an email form (subject, from to etc)
+end
