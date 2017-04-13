@@ -55,6 +55,7 @@ h2 {
   text-shadow: 2px 2px #18b9f8;
   padding-top: -2%;
 }
+
 /*---Nav Bar---*/
 .nav-bar {
   opacity: 0.8;
@@ -89,54 +90,88 @@ h2 {
   transition-delay: 0s;
 }
 
-/*----Modal----*/
-#modal {
-  padding: 150px;
-  background-color: #333;
-  max-width: 30%;
-  height: 10px;
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  border: 7px solid #bfbfbf;
+/*---About page---*/
+#about-img-1 {
+  float: left;
+  height: 500px;
+  width: 500px;
+  padding: 10px;
 }
 
-.hidden {
-  display: none;
+#about-info-1 {
+  clear: right;
+  font-family: "Poiret One",cursive;
+  font-size: 24px;
+  line-height: 40px;
+  font-style: italic;
+  margin-top: 70px;
+  width: 800px;
 }
 
-.exit-button {
- display: block;
- font-size: 5px;
+#about-img-2 {
+  clear: right;
+  height: 500px;
+  width: 500px;
+  padding: 10px;
 }
 
-#modal h2{
-  padding-top: 10%;
+#about-info-2 {
+  float: left;
+  font-family: "Poiret One",cursive;
+  font-size: 24px;
+  line-height: 40px;
+  font-style: italic;
+  width: 400px;
 }
 
-#submit {
-  padding-top: 10%;
+#about-img-3 {
+  height: 400px;
+  width: 100%;
 }
 
-#modal .exit-button {
- position: absolute;
- z-index: 1;
- top: 10px;
- right: 20px;
- border: 0;
- background: white;
- color: #333;
- padding: 5px 10px;
- font-size: 8px;
+#about-info-3 {
+  font-family: "Poiret One",cursive;
+  font-size: 24px;
+  line-height: 34px;
+  font-style: italic;
 }
 
-.modal2{
- display:block;
- position: absolute;
- top: 0;
- left: 0;
- width: 100%;
- height: 100%;
- overflow: auto;
+/*---gallery---*/
+.carousel{
+  position: relative;
+    height: 150px;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.city{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.showing{
+    opacity: 1;
+    z-index: 2;
+}
+
+/*---Contact page---*/
+#form-div {
+  margin: 150px 0px 50px 50px;
+}
+
+.motz-contact, .joel-contact {
+  font-family: "Avant-Garde", sans-serif;
+  font-size: 12px;
+  line-height: 4px;
 }
