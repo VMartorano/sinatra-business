@@ -23,6 +23,7 @@ post "/form-response" do
 
   # this redirects to page user was on
   redirect '/contact'
+  
   require 'sendgrid-ruby'
 
   # set the from, subject and to addresses

@@ -1,3 +1,58 @@
+/*----Home----*/
+.top {
+background: url(http://www.pacificworld.com/webwp/wp-content/uploads/2016/03/italy.jpg) no-repeat center center;
+  background-size: cover;
+  height: 70%;
+  margin-top: -1%;
+  padding-bottom: 11.5%;
+}
+
+.main {
+  position: relative;
+  top: 10%;
+  text-align: center;
+}
+
+.main h1 {
+  color: #18b9f8;
+  font-family: 'Satisfy', cursive;
+  font-size: 130px;
+  text-shadow: 3px 3px white;
+  margin-top: 0;
+  margin-bottom: 5%;
+  padding-top: 15%;
+}
+
+.home-button {
+  background-color: white;
+  color: #18b9f8;
+  font-size: 18px;
+  font-family: 'Courgette', cursive;
+  font-weight: bold;
+  padding: 1.5% 3%;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-shadow: 3px 3px #18b9f8;
+  border-radius: 12px;
+}
+
+.home-button:hover {
+  background: #18b9f8;
+  transition: background.5s;
+  color: white;
+  box-shadow: 3px 3px white;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 40px;
+  font-family:'Courgette', cursive;;
+  color: white;
+  text-shadow: 2px 2px #18b9f8;
+  padding-top: -2%;
+}
+}
+
 /*----Modal----*/
 #modal {
   padding: 150px;

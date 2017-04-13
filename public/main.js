@@ -25,5 +25,3 @@ function checkModal() {
    alert("Error!")
  }
 };
-
-// gallery
