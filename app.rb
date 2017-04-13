@@ -17,20 +17,11 @@ get "/contact" do
   erb :contact
 end
 
-<<<<<<< HEAD
-post "/form-response" do
-  params.inspect
-  redirect '/contact'
-end
 
-  require 'sendgrid-ruby'
-=======
 # post "/form-response" do
 #   params.inspect
 #   redirect '/contact'
 #
-
->>>>>>> 3396e3505ced4df5d4602c568681c6508934d31c
 
 post "/form-response" do
   # set the from, subject and to addresses
